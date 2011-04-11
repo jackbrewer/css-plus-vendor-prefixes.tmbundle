@@ -14,7 +14,7 @@ If the directory doesn't exist, create it.
 
 Clone the bundle - once you have it, reload your bundles in TextMate and it will appear in the bundles list.
 
-	git clone git://github.com/jackbb/CSS-JackBB.tmbundle.git "CSS-JackBB.tmbundle"
+	git clone git://github.com/jackbb/CSSVendorPrefixes-JackBB.tmbundle.git "CSSVendorPrefixes-JackBB.tmbundle"
 
 You can easily update the bundle through the TextMate menus by going to *'Bundles -> CSS Vendor Prefixes - Jack BB -> Update Bundle via Git'*.
 
