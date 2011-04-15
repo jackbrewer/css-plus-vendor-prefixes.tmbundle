@@ -11,7 +11,7 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes.rb'
 line = $stdin.read
 if line =~ /(\s*)(.+?\s*:\s*.+;$)/i
 	print "#{$1}-moz-#{$2}\n"
-	print "#{$1}#{$2}$0"
+	print "#{$1}     #{$2}$0"
 elsif line =~ /^(\s*)$/i
 	print "#{$1}-moz-$0"
 else
