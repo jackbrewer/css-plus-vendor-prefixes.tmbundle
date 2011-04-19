@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes.rb'
+
+line = $stdin.read
+if line =~ /(\s*)(.+?\s*:\s*.+;$)/i
+	print "#{$1}-webkit-#{$2}\n"
+	print "#{$1}-moz-#{$2}\n"
+	print "#{$1}-o-#{$2}\n"
+	print "#{$1}#{$2}$0"
+elsif line =~ /^(\s*)$/i
+	print "#{$1}-webkit-$1\n"
+	print "#{$1}-moz-$1\n"
+	print "#{$1}-o-$1\n"
+	print "#{$1}${1: }$0"
+else
+	TextMate.exit_show_tool_tip "Must be used on a completed line"
+	print line
+end</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Add -moz, -o-, -webkit-, no indent</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>--</string>
+	<key>uuid</key>
+	<string>00410939-AC91-41BD-8863-AF3E43FD851F</string>
+</dict>
+</plist>

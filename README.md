@@ -30,10 +30,10 @@ Simple! now come the tab triggers to add the prefixes. At the end of your line, 
 
 followed by *TAB* gives you
 
-	-moz-text-shadow: 1px 1px 3px #000;
-	-o-text-shadow: 1px 1px 3px #000;
 	-webkit-text-shadow: 1px 1px 3px #000;
-	text-shadow: 1px 1px 3px #000;
+	   -moz-text-shadow: 1px 1px 3px #000;
+	     -o-text-shadow: 1px 1px 3px #000;
+	        text-shadow: 1px 1px 3px #000;
 
 Only need one prefix? Add the first letter of your prefix to the trigger. For a webkit only prefix, add '**`-w`**' followed by *TAB* to the end of your line.
 
@@ -42,34 +42,27 @@ Only need one prefix? Add the first letter of your prefix to the trigger. For a 
 followed by *TAB* gives you
 
 	-webkit-transition: all 0.2s ease;
-	transition: all 0.2s ease;
+	        transition: all 0.2s ease;
 
 Fancy something different? using just '**`-`**' and *TAB* on an empty line gives you
 
-	-moz-
-	-o-
 	-webkit-
-	|
+	   -moz-
+	     -o-
+	        |
  
 Start typing and watch all four lines fill themselves in at the same time.
 
-I personally find these triggers most useful when editing existing code.
+If you aren't a fan of the indented syntax, use '**`--`**' instead of '**`-`**' (e.g. '**`--w`**') to format the prefixes without indentation.
 
-	-moz-border-radius: 3px 3px 0px 0px;
-	-o-border-radius: 3px 3px 0px 0px;
-	-webkit-border-radius: 3px 3px 0px 0px;
-	border-radius: 3px 3px 0px 0px;
-	
-If I need to change a border-radius, it is much quicker to delete the first three lines, make my changes, then use the '**`-`**' trigger:
+	text-shadow: 1px 1px 3px #000;--
 
-	border-radius: 5px 5px 2px 2px;-
+followed by *TAB* gives you
 
-which returns:
-		
-	-moz-border-radius: 5px 5px 2px 2px;
-	-o-border-radius: 5px 5px 2px 2px;
-	-webkit-border-radius: 5px 5px 2px 2px;
-	border-radius: 5px 5px 2px 2px;
+	-webkit-text-shadow: 1px 1px 3px #000;
+	-moz-text-shadow: 1px 1px 3px #000;
+	-o-text-shadow: 1px 1px 3px #000;
+	text-shadow: 1px 1px 3px #000;
 
 ---
 
