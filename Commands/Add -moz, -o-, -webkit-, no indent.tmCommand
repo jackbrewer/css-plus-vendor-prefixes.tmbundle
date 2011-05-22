@@ -12,11 +12,13 @@ line = $stdin.read
 if line =~ /(\s*)(.+?\s*:\s*.+;$)/i
 	print "#{$1}-webkit-#{$2}\n"
 	print "#{$1}-moz-#{$2}\n"
+	print "#{$1}-ms-#{$2}\n"
 	print "#{$1}-o-#{$2}\n"
 	print "#{$1}#{$2}$0"
 elsif line =~ /^(\s*)$/i
 	print "#{$1}-webkit-$1\n"
 	print "#{$1}-moz-$1\n"
+	print "#{$1}-ms-$1\n"
 	print "#{$1}-o-$1\n"
 	print "#{$1}${1: }$0"
 else
@@ -28,7 +30,7 @@ end</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>name</key>
-	<string>Add -moz, -o-, -webkit-, no indent</string>
+	<string>Add all prefixes, no indent</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
