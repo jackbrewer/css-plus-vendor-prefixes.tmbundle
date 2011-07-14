@@ -32,6 +32,7 @@ followed by *TAB* gives you
 
 	-webkit-text-shadow: 1px 1px 3px #000;
 	   -moz-text-shadow: 1px 1px 3px #000;
+	    -ms-text-shadow: 1px 1px 3px #000;
 	     -o-text-shadow: 1px 1px 3px #000;
 	        text-shadow: 1px 1px 3px #000;
 
@@ -48,6 +49,7 @@ Fancy something different? using just '**`-`**' and *TAB* on an empty line gives
 
 	-webkit-
 	   -moz-
+	    -ms-
 	     -o-
 	        |
  
@@ -61,13 +63,12 @@ followed by *TAB* gives you
 
 	-webkit-text-shadow: 1px 1px 3px #000;
 	-moz-text-shadow: 1px 1px 3px #000;
+	-ms-text-shadow: 1px 1px 3px #000;
 	-o-text-shadow: 1px 1px 3px #000;
 	text-shadow: 1px 1px 3px #000;
 
 ---
 
-For the moment, I am only using the -moz-, -o-, and -webkit- prefixes. If you need more, it should be fairly easy to duplicate and edit the commands in the bundle editor (or you can ask me to do it!).
-
-I have also intentionally left these triggers out of my main CSS bundle. My reason being that if and when (hopefully) browser prefixes become obsolete, this bundle can be easily deleted.
+I have intentionally left these triggers out of my main CSS bundle. My reason being that if and when (hopefully) browser prefixes become obsolete, this bundle can be easily deleted.
 
 Enjoy!
