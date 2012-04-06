@@ -14,9 +14,9 @@ If the directory doesn't exist, create it.
 
 Clone the bundle - once you have it, reload your bundles in TextMate and it will appear in the bundles list.
 
-	git clone git://github.com/jackbb/CSSVendorPrefixes-JackBB.tmbundle.git "CSSVendorPrefixes-JackBB.tmbundle"
+	git clone git://github.com/jackbrewer/css-plus-vendor-prefixes.tmbundle.git
 
-You can easily update the bundle through the TextMate menus by going to *'Bundles -> CSS Vendor Prefixes - Jack BB -> Update Bundle via Git'*.
+You can easily update the bundle through the TextMate menus by going to *'Bundles -> CSS+ Vendor Prefixes -> Update Bundle via Git'*.
 
 ##Example usage
 
@@ -53,7 +53,7 @@ Fancy something different? using just '**`-`**' and *TAB* on an empty line gives
 	     -o-
 	        |
  
-Start typing and watch all four lines fill themselves in at the same time.
+Start typing and watch all five lines fill themselves in at the same time.
 
 If you aren't a fan of the indented syntax, use '**`--`**' instead of '**`-`**' (e.g. '**`--w`**') to format the prefixes without indentation.
 
@@ -69,6 +69,6 @@ followed by *TAB* gives you
 
 ---
 
-I have intentionally left these triggers out of my main CSS bundle. My reason being that if and when (hopefully) browser prefixes become obsolete, this bundle can be easily deleted.
+These triggers have intentionally been left out of the [CSS+ bundle](https://github.com/jackbrewer/css-plus.tmbundle). The reason being that if and when (hopefully) browser prefixes become obsolete, this bundle can be easily deleted.
 
 Enjoy!

@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>contactEmailRot13</key>
+	<string>ohaqyrf@wnpxoerjre.pb.hx</string>
+	<key>contactName</key>
+	<string>Jack Brewer</string>
+	<key>description</key>
+	<string>A bundle to assist with vendor prefixes in TextMate.</string>
 	<key>mainMenu</key>
 	<dict>
 		<key>items</key>
@@ -24,7 +30,7 @@
 		<dict/>
 	</dict>
 	<key>name</key>
-	<string>CSS Vendor Prefixes - JackBB</string>
+	<string>CSS+ Vendor Prefixes</string>
 	<key>ordering</key>
 	<array>
 		<string>F8651C72-8178-4159-85DD-7AA5A815867D</string>
